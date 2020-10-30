@@ -136,7 +136,7 @@ _Note: You must rebuild the servers any time you make changes to the C code._
 ***
 
 ## 9) Configure the client
-Client configuration is beyond the scope of this document. For past private servers, developers would do something like package up the 7.50 version of the original client and use a `ddraw.dll` like the one found in this repo to redirect the game to the server at `tk0.retrotk.com`.
+Client configuration is beyond the scope of this document. For past private servers, developers would do something like package up the 7.50 version of the original client and use a `ddraw.dll` like the one found in this repository to redirect the game to the server at `tk0.retrotk.com`.
 
 Each player would then have to use some Windows hosts file editor to add that host and set the IP address for it. In the context of this document, that IP address would be the one found in step 5.8. Then as long as the player had the `ddraw.dll` in the same folder as the client executable, it would redirect the game to connect to the private server when playing.
 
@@ -213,5 +213,5 @@ If you want to use database management software to connect to the MySQL database
 
 ## Tips
 
-- Use `Shift` + `PgUp` and `PgDown` to scroll up and down in the Ubuntu Server terminal
+- Use `Shift` + `PgUp` and `PgDown` to scroll up and down in the VirtualBox Ubuntu Server terminal
 - [MySQL Cheat Sheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)
