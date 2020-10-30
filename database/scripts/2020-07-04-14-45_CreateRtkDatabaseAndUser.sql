@@ -14,7 +14,7 @@ CREATE PROCEDURE sp(
 
 BEGIN
 	IF NOT EXISTS (SELECT * FROM mysql.`user` WHERE `User` = 'rtk' AND Host = '%') THEN
-		CREATE USER 'rtk'@'%' IDENTIFIED BY '50LM8U8Poq5uX2AZJVKs'; -- Password should match the one used in docker-compose.yml
+		CREATE USER 'rtk'@'%' IDENTIFIED BY 'changeMe'; -- Password must match the ones in /rtk/conf/char.conf and save.conf
 	END IF;
 	
 	GRANT ALL PRIVILEGES ON *.* TO 'rtk'@'%';

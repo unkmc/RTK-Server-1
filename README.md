@@ -1,12 +1,11 @@
 # Local RTK Server Setup
-This document describes how to set up a local RTK server on a PC running `Windows 10` and using `VirtualBox 6.1.8`. Any deviations from that setup may result in procedural discrepancies.
+This document describes how to set up a local RTK server on a PC running `Windows 10` and using [VirtualBox 6.1.8](https://download.virtualbox.org/virtualbox/6.1.8/VirtualBox-6.1.8-137981-Win.exe). Any deviations from that setup may result in procedural discrepancies.
 
 ***
 
 ## 1) Create a virtual machine
 1. Download [Ubuntu Server 16.04 (32-bit)](https://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-i386.iso)
 2. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-   - This document is based on [VirtualBox 6.1.8](https://download.virtualbox.org/virtualbox/6.1.8/VirtualBox-6.1.8-137981-Win.exe)
 3. Open `VirtualBox` and click the `New` button to create a new virtual machine (VM)
    - **Name:** RTK
    - **Machine Folder:** Your choice
@@ -103,8 +102,8 @@ This document describes how to set up a local RTK server on a PC running `Window
 ## 6) Update the IP address in the RTK source
 1. In Windows, use any text editor to open the `/rtk/conf/map.conf` file from your copy of the RTK repository
 2. Edit the values for `map_ip` and `loginip` to use the IP address obtained in step 5.8
-   - e.g. `map_ip: 192.168.56.101`
-   - e.g. `loginip: 192.168.56.101`
+   - e.g. `map_ip: 192.168.56.104`
+   - e.g. `loginip: 192.168.56.104`
 3. Save the file, and the update will automatically sync to your VM via the shared folder configured in step 4
 
 ***
@@ -137,13 +136,11 @@ _Note: You must rebuild the servers any time you make changes to the C code._
 ***
 
 ## 9) Configure the client
-1. On Windows, press `Windows key` + `r` and enter `shell:programfilesx86`
-2. Copy the included `/client/RetroTK` folder to the directory that was opened by the previous step
-3. Create a shortcut to the copy of `RetroTK.exe` for your desktop or any other desired location
-4. Run the included `/client/WHE.exe` with administrator privileges and create the following entry:
-   - **Name of hosts to add:** tk0.retrotk.com
-   - **IP address:** The IP address found in step 5.8
- 5. Run `RetroTK.exe` to play
+Client configuration is beyond the scope of this document. For past private servers, developers would do something like package up the 7.50 version of the original client and use a `ddraw.dll` like the one found in this repo to redirect the game to the server at `tk0.retrotk.com`.
+
+Each player would then have to use some Windows hosts file editor to add that host and set the IP address for it. In the context of this document, that IP address would be the one found in step 5.8. Then as long as the player had the `ddraw.dll` in the same folder as the client executable, it would redirect the game to connect to the private server when playing.
+
+You should not do this. Altering the original client in any way violates its EULA, and distribution of a client that is the intellectual property of another entity could be copyright infringement.
 
 ***
 
@@ -153,7 +150,7 @@ _Note: You must rebuild the servers any time you make changes to the C code._
 3. On the server, login to MySQL and promote the new character to a GM:
    - `/usr/bin/mysql -u root -p`
    - `USE RTK;`
-   - ``UPDATE `Character` SET `ChaGMLevel` = '99' WHERE `ChaName` = '[Your character's name goes here]';``
+   - ``UPDATE `Character` SET `ChaGMLevel` = '99' WHERE `ChaName` = 'YourCharacterName';``
    - `exit`
 4. Log back in
 
@@ -206,7 +203,7 @@ If you want to use database management software to connect to the MySQL database
    - [DBeaver]() is great free alternative, but the UI is less intuitive and might be confusing for inexperienced users
    - [Table Plus](https://tableplus.com/windows) is another free option that is more limited but might therefore be less intimidating
 5. Open your database manager and connect to the database using the IP address of your VM. This will look different depending on which software you installed, but here are the main things you are likely to need to know:
-   - **Host/Socket:** The IP address of your VM (e.g. `192.168.56.101`)
+   - **Host/Socket:** The IP address of your VM (e.g. `192.168.56.104`)
    - **Port:** 3306
    - **User:** root
    - **Password:** MySQL `root` password from step 3.4
