@@ -111,7 +111,7 @@ luac.out
 #######
 
 # C log files
-/rtk/packetlog.txt
+/rtk/*log.txt
 /rtk/logs/*
 /rtk/logs-archive/*
 !/rtk/logs/.gitignore
