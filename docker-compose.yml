@@ -1,0 +1,32 @@
+version: '3.3'
+services:
+  server:
+    image: rtk-server:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: tail -F /dev/null # TODO: Add commands to automatically build/run servers; for now you have to bash into the container to start them
+    restart: always
+    ports:
+      - "2000:2000"
+      - "2001:2001"
+      - "2005:2005"
+    volumes:
+      - "./rtk:/home/rtk"
+      - "./rtklua:/home/rtklua"
+      - "./rtkmaps:/home/rtkmaps"
+    # TODO: Add volume for automated database backups
+
+  database:
+    image: mysql/mysql-server:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'definitelyChangeMe' # TODO
+      MYSQL_USER: 'rtk'
+      MYSQL_PASSWORD: 'changeMe' # TODO
+      MYSQL_DATABASE: 'RTK'
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./database/scripts:/docker-entrypoint-initdb.d" # Every script in docker-entrypoint-initdb.d is executed in alphabetical order as soon as the container starts
+      # TODO: Add volume to persist data
