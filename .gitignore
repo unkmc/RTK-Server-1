@@ -136,3 +136,5 @@ luac.out
 
 # Database backups
 /database/history/*.sql
+
+docker

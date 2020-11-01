@@ -35,7 +35,7 @@ BEGIN
 		  `AccountActivated` int(10) unsigned NOT NULL DEFAULT '0',
 		  `AccountTempPassword` varchar(255) NOT NULL DEFAULT '',
 		  PRIMARY KEY (`AccountId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=577 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -86,7 +86,7 @@ BEGIN
 		  PRIMARY KEY (`AthId`),
 		  KEY `AthSplId` (`AthSplId`),
 		  KEY `AthChaId` (`AthChaId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=1664592 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -148,7 +148,7 @@ BEGIN
 		  PRIMARY KEY (`AuctionId`),
 		  KEY `EqpChaId` (`AuctionChaId`) USING BTREE,
 		  KEY `EqpItmId` (`AuctionItmId`) USING BTREE
-		) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -175,7 +175,7 @@ BEGIN
 		  PRIMARY KEY (`AutId`),
 		  KEY `AutChaName` (`AutChaName`),
 		  KEY `AutChaId` (`AutChaId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=21746 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -212,7 +212,7 @@ BEGIN
 		  PRIMARY KEY (`BnkId`),
 		  KEY `BnkChaId` (`BnkChaId`),
 		  KEY `BnkItmId` (`BnkItmId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=22305 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -233,7 +233,7 @@ BEGIN
 		  `BndId` int(10) unsigned NOT NULL AUTO_INCREMENT,
 		  `BndIP` varchar(255) NOT NULL DEFAULT '',
 		  PRIMARY KEY (`BndId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -257,7 +257,7 @@ BEGIN
 		  `BoardX` int(10) NOT NULL,
 		  `BoardY` int(10) NOT NULL,
 		  PRIMARY KEY (`BrdId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -310,7 +310,7 @@ BEGIN
 		  `BtlId` int(10) unsigned NOT NULL AUTO_INCREMENT,
 		  `BtlDescription` varchar(255) NOT NULL DEFAULT '',
 		  PRIMARY KEY (`BtlId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -344,7 +344,7 @@ BEGIN
 		  KEY `BrdBnmId` (`BrdBnmId`),
 		  KEY `BrdChaName` (`BrdChaName`),
 		  KEY `BrdBtlId` (`BrdBtlId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=3718 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -369,7 +369,7 @@ BEGIN
 		  `BotCheckInput` varchar(255) NOT NULL DEFAULT '',
 		  `BotCheckKey` varchar(255) NOT NULL DEFAULT '',
 		  PRIMARY KEY (`BotCheckId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -470,7 +470,7 @@ BEGIN
 		  KEY `ChaClnId` (`ChaClnId`),
 		  KEY `ChaPthId` (`ChaPthId`),
 		  KEY `ChaMapId` (`ChaMapId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=2714 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -507,7 +507,7 @@ BEGIN
 		  PRIMARY KEY (`CbkId`),
 		  KEY `CbkClnId` (`CbkClnId`),
 		  KEY `CbkItmId` (`CbkItmId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -569,7 +569,7 @@ BEGIN
 		  PRIMARY KEY (`EqpId`),
 		  KEY `EqpChaId` (`EqpChaId`) USING BTREE,
 		  KEY `EqpItmId` (`EqpItmId`) USING BTREE
-		) ENGINE=InnoDB AUTO_INCREMENT=48915 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -610,7 +610,7 @@ BEGIN
 		  `FndChaName19` varchar(16) NOT NULL DEFAULT '',
 		  `FndChaName20` varchar(16) NOT NULL DEFAULT '',
 		  PRIMARY KEY (`FndId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=571 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -632,7 +632,7 @@ BEGIN
 		  `GrgIdentifier` varchar(64) NOT NULL DEFAULT '',
 		  `GrgValue` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`GrgId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=603875 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -661,7 +661,7 @@ BEGIN
 		  `GiftItemEngrave3` varchar(64) NOT NULL DEFAULT '',
 		  `GiftItemAmount3` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`GiftId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -699,7 +699,7 @@ BEGIN
 		  PRIMARY KEY (`InvId`),
 		  KEY `InvChaId` (`InvChaId`) USING BTREE,
 		  KEY `InvItmId` (`InvItmId`) USING BTREE
-		) ENGINE=InnoDB AUTO_INCREMENT=694873 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -847,7 +847,7 @@ BEGIN
 		  PRIMARY KEY (`KilId`),
 		  KEY `KilChaId` (`KilChaId`),
 		  KEY `KilMobId` (`KilMobId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=108236 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -875,7 +875,7 @@ BEGIN
 		  `LegTChaId` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`LegId`),
 		  KEY `LegChaId` (`LegChaId`) USING BTREE
-		) ENGINE=InnoDB AUTO_INCREMENT=15502 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -907,7 +907,7 @@ BEGIN
 		  PRIMARY KEY (`MalId`),
 		  KEY `MalChaName` (`MalChaName`),
 		  KEY `MalChaNameDestination` (`MalChaNameDestination`)
-		) ENGINE=InnoDB AUTO_INCREMENT=6200 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -951,7 +951,7 @@ BEGIN
 		  `ModValue` int(10) NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`ModId`),
 		  KEY `MrgMapId` (`ModMapId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=5390 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -976,7 +976,7 @@ BEGIN
 		  `MrgPosition` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`MrgId`),
 		  KEY `MrgMapId` (`MrgMapId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=1889 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1138,7 +1138,7 @@ BEGIN
 		  `NeqSlot` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`NeqId`),
 		  KEY `NeqNpcId` (`NeqNpcId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1164,7 +1164,7 @@ BEGIN
 		  `NrgPosition` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`NrgId`),
 		  KEY `NrgChaId` (`NrgChaId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1210,7 +1210,7 @@ BEGIN
 		  `NpcCanReceiveItem` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`NpcId`),
 		  KEY `NpcMapId` (`NpcMapId`) USING BTREE
-		) ENGINE=InnoDB AUTO_INCREMENT=392 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1248,7 +1248,7 @@ BEGIN
 		  PRIMARY KEY (`ParId`),
 		  KEY `ParChaIdDestination` (`ParChaIdDestination`),
 		  KEY `ParItmId` (`ParItmId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=483 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1313,7 +1313,7 @@ BEGIN
 		  `QrgPosition` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`QrgId`),
 		  KEY `QrgChaId` (`QrgChaId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=30170 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1371,7 +1371,7 @@ BEGIN
 		  `5thPlaceReward2_Amount` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`EventId`),
 		  KEY `REventId` (`EventId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1467,7 +1467,7 @@ BEGIN
 		  `RegPosition` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`RegId`),
 		  KEY `RegChaId` (`RegChaId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=306686 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1522,7 +1522,7 @@ BEGIN
 		  PRIMARY KEY (`SpnId`),
 		  KEY `SpnMobId` (`SpnMobId`),
 		  KEY `SpnMapId` (`SpnMapId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=1274 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1578,7 +1578,7 @@ BEGIN
 		  PRIMARY KEY (`SbkId`),
 		  KEY `SbkChaId` (`SbkChaId`),
 		  KEY `SbkSplId` (`SbkSplId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=26593 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1638,7 +1638,7 @@ BEGIN
 		  `TimSeason` int(10) unsigned NOT NULL DEFAULT '0',
 		  `TimYear` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`TimId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1646,7 +1646,7 @@ BEGIN
 		--
 		
 		/*!40000 ALTER TABLE `Time` DISABLE KEYS */;
-		INSERT INTO `Time` VALUES (1,7,27,2,6);
+		INSERT INTO `Time` VALUES (1,1,1,1,1);
 		/*!40000 ALTER TABLE `Time` ENABLE KEYS */;
 		
 		--
@@ -1660,7 +1660,7 @@ BEGIN
 		  `UtmId` int(10) unsigned NOT NULL AUTO_INCREMENT,
 		  `UtmValue` int(10) unsigned NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`UtmId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
@@ -1687,7 +1687,7 @@ BEGIN
 		  `DestinationX` int(10) NOT NULL DEFAULT '0',
 		  `DestinationY` int(10) NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`WarpId`)
-		) ENGINE=InnoDB AUTO_INCREMENT=5611 DEFAULT CHARSET=latin1;
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 		/*!40101 SET character_set_client = @saved_cs_client */;
 		
 		--
