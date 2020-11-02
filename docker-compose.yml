@@ -16,10 +16,6 @@ services:
       - 2000:2000
       - 2001:2001
       - 2005:2005
-    volumes:
-      - ./rtk:/root/rtk
-      - ./rtklua:/root/rtklua
-      - ./rtkmaps:/root/rtkmaps
     # TODO: Add volume for automated database backups
 
   database:

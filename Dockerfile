@@ -12,4 +12,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     liblua5.1 \
     mysql-client-5.7
 
+COPY ./rtk /root/rtk
+COPY ./rtklua /root/rtklua
+COPY ./rtkmaps /root/rtkmaps
+
 # TODO: Implement cron job for automated database backups

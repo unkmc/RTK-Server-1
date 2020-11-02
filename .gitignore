@@ -6,10 +6,10 @@
 *.d
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+**/*.o
+**/*.ko
+**/*.obj
+**/*.elf
 
 # Linker output
 *.ilk
@@ -138,3 +138,4 @@ luac.out
 /database/history/*.sql
 
 docker
+
